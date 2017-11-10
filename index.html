@@ -1,0 +1,283 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>DEMO - GO City Montevideo</title>
+
+
+      <link rel="stylesheet" href="libs/css/bootstrap.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="libs/css/font-awesome.min.css">
+      <link rel="stylesheet" href="libs/css/bootstrap-datetimepicker.min.css">
+
+
+    </head>
+    <body>
+      <nav id="header" class="navbar navbar-default" role="navigation">
+
+        <div class="container">
+
+          <!-- Logo y responsive mobile para el navBar -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <img id="header-logo" src="img/logo_horizontal.png" alt="GOCityLogo" />
+            </a>
+          </div>
+
+          <!-- Links y dropdown del navBar -->
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Inicio</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="pages/empresarial.html">Empresarial</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="pages/tourism.html">Turismo</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="pages/personalizado.html">Personalizado</a></li>
+                </ul>
+              </li>
+              <li><a href="pages/fleet.html">Flota</a></li>
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#contacto-modal">Contacto</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+
+      <!-- Carousel Slide -->
+      <div id="mySlide" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores Slide -->
+        <ol class="carousel-indicators">
+          <li data-target="#mySlide" data-slide-to="0" class="active"></li>
+          <li data-target="#mySlide" data-slide-to="1" class=""></li>
+          <li data-target="#mySlide" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img class="first-slide" src="img/slide/slide1.jpg" alt="Primer slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p><a class="btn btn-lg btn-primary   " role="button">Solicitar Servicios</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="second-slide" src="img/slide/slide2.jpg" alt="Segunda slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="third-slide" src="img/slide/slide3.jpg" alt="Tercer slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>     <!-- Fin Slide -->
+
+      <!-- Container Servicios -->
+
+      <div class="row services"> 
+        <div class="container services">
+          <h2>Servicios</h2>
+          <div class="col-md-4">
+            <img class="img-circle" src="img/services/empre.jpg" alt="placeholder image empre" width="140" height="140">
+            <h2>Empresarial</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p><a class="btn btn-default id" href="#SolicitudServicio" role="button" onclick="selectService('0')">Solicitar Cotizacion</a></p>
+          </div><!-- /.col-md-4 Empresarial -->[]
+          <div class="col-md-4">
+            <img class="img-circle" src="img/services/turis.jpg" alt="Placeholder image Turism" width="140" height="140">
+            <h2>Turismo</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p><a class="btn btn-default" href="#SolicitudServicio" role="button" onclick="selectService('1')">Agendar traslado</a></p>
+          </div><!-- /.col-md-4 Turismo-->
+          <div class="col-md-4">
+            <img class="img-circle" src="img/services/perso.jpg" alt="Placeholder image personal" width="140" height="140">
+            <h2>Personalizado</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com2modo consequat.</p>
+            <p><a class="btn btn-default" href="#SolicitudServicio" role="button" onclick="selectService('2')">Reservar traslado</a></p>
+          </div><!-- /.col-md-4 Personalizdo -->
+        </div><!-- /.row -->
+      </div><!-- /.services -->
+      <!-- Fin Container Servicios -->
+
+      <!-- Container CityTours -->
+      <div class="row cityTours">
+        <div class="container citytours">
+          <h2>City Tours</h2>
+          <div class="col-md-4">
+            <img class="img-circle" src="img/citytours/colonia.jpg" alt="placeholder image Colonia" width="140" height="140">
+            <h2>Colonia</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p><a class="btn btn-default btnTours" href="#SolicitudServicio" role="button" onclick="selectService('3')">Mas Informacion</a></p>
+          </div><!-- /.col-md-4 Colonia -->
+          <div class="col-md-4">
+            <img class="img-circle" src="img/citytours/mdeo.jpg" alt="Placeholder image Montevideo" width="140" height="140">
+            <h2>Montevideo</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p><a class="btn btn-default btnTours" href="#SolicitudServicio" role="button" onclick="selectService('4')">Mas Informacion</a></p>
+          </div><!-- /.col-md-4 Montevideo-->
+          <div class="col-md-4">
+            <img class="img-circle" src="img/citytours/ptadeleste.jpg" alt="Placeholder image PtaDelEste" width="140" height="140">
+            <h2>Punta Del Este</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p><a class="btn btn-default btnTours" href="#SolicitudServicio" role="button" onclick="selectService('5')">Mas Informacion</a></p>
+          </div><!-- /.col-md-4 Punta del Este -->
+        </div><!-- /.row -->
+      </div><!-- /.container citytours -->
+      <!-- Fin Container CityTours -->
+
+
+      <!-- Container Solicitud de servicio -->
+      <section id="SolicitudServicio" class="container">
+
+        <h3 class="title-form">Solicitar Servicio</h3>
+
+        <form> <!-- Inicio Formulario -->
+
+          <div class="form-group formulario"> 
+
+            <label for="serviceSelect">Servicio Seleccionado</label>
+            <select class="form-control" id="serviceSelected">
+              <option value="0">Servicio Empresarial</option>
+              <option value="1">Turismo</option>
+              <option value="2">Personalizado</option>
+              <option value="3">City Tour Colonia</option>
+              <option value="4">City Tour Montevideo</option>
+              <option value="5">City Tour Punta Del Este</option>
+            </select>
+
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" required>
+            <label for="Telefono">Telefono</label>
+            <input type="text" class="form-control" required>
+            <label for="email">Email</label>       
+            <input type="text" class="form-control" placeholder="Ejemplo:alguien@dominio.com" required>
+
+            <div>
+             <label>Fecha y hora de partida</label>
+             <div class='input-group date fecha-servicio' id='datetimepicker1'>
+              <input type='text' class="form-control" />
+              <span class="input-group-addon">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+          <div class="btnServiceForm">
+            <button type="submit" class="btn btn-primary">Solicitar!</button>
+            <button type="submit" class="btn btn-default">Cancelar</button>
+          </div>
+        </div>
+
+      </form><!-- Fin Formulario-->
+    </section>
+    <!-- Fin Container Solicitud de servicio -->
+
+    <!-- Container footer -->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-3">
+            <img id="footer-logo" src="img/logo_horizontal.png" alt="GOCity" />
+          </div><!-- /.col -->
+
+          <div class="col-md-3">
+            <ul>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="pages/fleet.html">Flota</a></li>
+            </ul>
+          </div><!-- /.col -->
+
+          <div class="col-md-3">
+            <ul>
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#contacto-modal">Contacto</a></li>
+            </ul>
+          </div><!-- /.col -->
+
+          <div class="col-md-3">
+            <p style="color:#000;">Copyright &copy; GOCityMontevieo 2017</p>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /#footer -->
+
+    <!-- Contacto Modal -->
+    <div id="contacto-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Contacto</h4>
+          </div>
+          <div class="modal-body">
+            <form action="https://formspree.io/your@email.com" method="POST">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" value="" class="form-control" placeholder="Ingresar nombre completo...">
+              </div><!-- /.form-group -->
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="_replyto" value="" class="form-control" placeholder="Ingresar Email...">
+              </div><!-- /.form-group -->
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea name="message" rows="8" cols="40" class="form-control" placeholder="Ingresar mensaje..."></textarea>
+              </div><!-- /.form-group -->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Enviar</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+  </body>
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDdlRoROT2H_qvAoMzshm6QQgF93nMuwFg",
+      authDomain: "gocitycalendar.firebaseapp.com",
+      databaseURL: "https://gocitycalendar.firebaseio.com",
+      projectId: "gocitycalendar",
+      storageBucket: "",
+      messagingSenderId: "590450027162"
+    };
+    firebase.initializeApp(config);
+  </script> <-->
+
+<!-- Local JS of JQuery 1.12.4 for navBar dropdown menu  -->
+<script src="libs/js/jQuery1_12_4.js"></script>
+<!-- Local JS of Bootstrap -->
+<script src="libs/js/bootstrap.min.js"></script>
+<!-- Local Moment.js for datepicker -->
+<script src="libs/js/moment.min.js"></script>    
+<!-- Local JS of Boostrap DateTimePicker -->
+<script src="libs/js/bootstrap-datetimepicker.min.js"></script>  
+<!-- Local JS own -->
+<script src="js/scripts.js"></script>
+
+
+</html>
