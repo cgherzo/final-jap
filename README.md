@@ -57,7 +57,7 @@ Just clone the repository, up the json-server for the file .json and open index.
 
 ## Authors
 
-* **Carolina Gherzo** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Carolina Gherzo**
 
 ## License
 
