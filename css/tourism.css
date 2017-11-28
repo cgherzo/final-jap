@@ -1,5 +1,30 @@
+.navbar{
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 0px solid transparent;
+}
+
+.navbar-brand{
+  height: 55px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#footer {
+	margin-top: 40px;
+	color: #000000;
+  background-color: #F8F8F8;
+  padding: 20px 0 15px 0;
+  font-size: 16px;
+  width: auto;
+}
+
 body {
-  background-color: #ddd;
+  background-color: #F8F8F8;
 }
 
 h3 {
@@ -64,11 +89,12 @@ label.tab-description {
 	width: 35%;
 }
 
-#footer {
-  margin-top: 40px;
-  color: #000000;
-    background-color: #F8F8F8;
-  padding: 20px 0 15px 0;
-  font-size: 16px;
-    width: auto;
+.navbar-brand{
+  padding: 15px;
+}
+
+.tab-pane img {
+  max-width: 150px;
+  float: left;
+  margin: 0 15px 0 0;
 }

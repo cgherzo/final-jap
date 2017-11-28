@@ -5,15 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Servicio Personalizado - GO City Montevideo</title>
-
-
-        <link rel="stylesheet" href="../libs/css/bootstrap.css">
-        <link rel="stylesheet" href="../libs/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/personalizado.css">
       </head>
 
       <body>
-
         <header>
           <nav id="header" class="navbar navbar-default" role="navigation">
             <div class="container">
@@ -36,23 +33,52 @@
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="pages/empresarial.html">Empresarial</a></li>
+                      <li><a href="empresarial.html">Empresarial</a></li>
                       <li role="separator" class="divider"></li>
-                      <li><a href="pages/tourism.html">Turismo</a></li>
+                      <li><a href="tourism.html">Turismo</a></li>
                       <li role="separator" class="divider"></li>
-                      <li><a href="pages/personalizado.html">Personalizado</a></li>
+                      <li><a href="personalizado.html">Personalizado</a></li>
                     </ul>
                   </li>
-                  <li><a href="#">Flota</a></li>
-                  <li><a href="#">Sobre Nosotros</a></li>
+                  <li><a href="fleet.html">Flota</a></li>
+                  <li><a href="aboutUs.html">Sobre Nosotros</a></li>
                   <li><a href="#" data-toggle="modal" data-target="#contacto-modal">Contacto</a></li>
                 </ul>
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container -->
           </nav>  
+          <!-- Contacto Modal -->
+          <div id="contacto-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Contacto</h4>
+                </div>
+                <div class="modal-body">
+                  <form action="https://formspree.io/your@email.com" method="POST">
+                    <div class="form-group">
+                      <label for="name">Nombre</label>
+                      <input type="text" name="name" value="" class="form-control" placeholder="Ingresar nombre completo...">
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" name="_replyto" value="" class="form-control" placeholder="Ingresar Email...">
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                      <label for="message">Mensaje</label>
+                      <textarea name="message" rows="8" cols="40" class="form-control" placeholder="Ingresar mensaje..."></textarea>
+                    </div><!-- /.form-group -->
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Enviar</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
         </header>
-
-        
+       
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
@@ -65,57 +91,18 @@
           </div>
         </div>
 
-        <div class="container">
+        <section class="personalizado">
+          <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12">
-              <div class="tabs-left">
-                <ul class="nav nav-tabs">
-                  <li class="active">
-                    <a href="#a" data-toggle="tab" aria-expanded="true">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                      <label class="tab-description">Individual</label>
-                    </a>
-                  </li>
+              <div class="tabs-left" id="services">
 
-                  <li class="">
-                    <a href="#b" data-toggle="tab" aria-expanded="false">
-                      <i class="fa fa-birthday-cake" aria-hidden="true"></i>
-                      <label class="tab-description">Traslados a Eventos</label>
-                    </a>
-                  </li>
+              </div><!-- ./tabs-left -->
+            </div><!-- ./col -->
+          </div><!-- ./row -->
+        </div> <!-- ./container -->
 
-                  <li class="">
-                    <a href="#c" data-toggle="tab" aria-expanded="false">
-                      <i class="fa fa-users" aria-hidden="true"></i>
-                      <label class="tab-description">Salidas Grupales</label>
-                    </a>
-                  </li>
-
-                </ul>
-                <div class="tab-content">
-                  <div class="tab-pane active" id="a" style="height: 400px;">
-                    <h3>Individual</h3>
-                    <p>
-                      CCCCThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.
-                    </p>
-                  </div>
-                  
-                  <div class="tab-pane" id="b" style="height: 400px;">
-                    <h3>Traslados a Eventos</h3>
-                    <p>DDDDDSecondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</p>
-                  </div>
-
-                  <div class="tab-pane" id="c" style="height: 400px;">
-                    <h3>Salidas Grupales</h3>
-                    <p>CCCCThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.
-                    </p>
-                  </div>
-                </div><!-- /tab-content -->
-              </div><!-- /tabbable -->
-            </div><!-- /col -->
-          </div><!-- /row -->
-        </div>
-
+        </section>
 
         <!-- Container footer -->
         <div id="footer">
@@ -123,7 +110,7 @@
             <div class="row">
 
               <div class="col-md-3">
-                <img id="footer-logo" src="img/logo_horizontal.png" alt="GOCity" />
+                <img id="footer-logo" src="../img/logo_horizontal.png" alt="GOCity" />
               </div><!-- /.col -->
 
               <div class="col-md-3">
@@ -147,44 +134,17 @@
           </div><!-- /.container -->
         </div><!-- /#footer -->
 
-        <!-- Contacto Modal -->
-        <div id="contacto-modal" class="modal fade" tabindex="-1" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Contacto</h4>
-              </div>
-              <div class="modal-body">
-                <form action="https://formspree.io/your@email.com" method="POST">
-                  <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" value="" class="form-control" placeholder="Ingresar nombre completo...">
-                  </div><!-- /.form-group -->
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="_replyto" value="" class="form-control" placeholder="Ingresar Email...">
-                  </div><!-- /.form-group -->
-                  <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea name="message" rows="8" cols="40" class="form-control" placeholder="Ingresar mensaje..."></textarea>
-                  </div><!-- /.form-group -->
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-success" data-dismiss="modal">Enviar</button>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
       </body>
 
-
-      <!-- Local JS of JQuery 1.12.4 for navBar dropdown menu  -->
-      <script src="../libs/js/jQuery1_12_4.js"></script>
-      <!-- Local JS of Bootstrap -->
-      <script src="../libs/js/bootstrap.min.js"></script>
-      <!-- Local JS own -->
+      <!-- JS of JQuery 1.12.4 for navBar dropdown menu  -->
+      <script src="../node_modules/jquery/dist/jquery.js"></script>
+      <!-- JS of Bootstrap -->
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+      <!-- JS of Axios -->
+      <script src="../node_modules/axios/dist/axios.min.js"></script>
+      <!-- JS constructor own -->
+      <script src="../services/serviciosService.js"></script>
+      <!-- JS own -->
       <script src="../js/personalizado.js"></script>
 
       </html>

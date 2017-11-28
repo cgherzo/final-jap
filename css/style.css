@@ -1,0 +1,72 @@
+.navbar{
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 0px solid transparent;
+}
+
+.navbar-brand{
+  height: 80px;
+}
+
+.navbar-nav > li > a {
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+
+.services{
+  margin-top: 20px;
+}
+
+.citytours{
+    margin-top: 20px;
+}
+
+#footer {
+	margin-top: 40px;
+	color: #000000;
+  background-color: #F8F8F8;
+	padding: 15px 0 15px 0;
+	font-size: 16px;
+  width: auto;
+}
+
+#footer-logo {
+	margin-bottom: 15px;
+}
+
+#footer ul {
+	margin: 0;
+	padding: 0;
+}
+
+#footer ul li {
+	list-style: none;
+	margin-bottom: 6px;
+}
+
+#footer ul li a,
+#footer ul li a:visited {
+	color: #000000;
+}
+
+.formulario{
+  width: 50% !important;
+  margin: 0 auto;
+}
+
+.title-form{
+  text-align: center;
+}
+
+.btnServiceForm{
+  margin-top: 20px;
+}
+
+label > section {
+  margin-top: 10px;
+}
+
+
+
+
